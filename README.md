@@ -21,7 +21,7 @@ The project is a website for a conference that brings together artists from diff
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://tylher.github.io/First-capstone-project/)
+[Live Demo Link](https://tylher.github.io/first-capstone/)
 
 
 ## Getting Started
@@ -41,7 +41,7 @@ To view and edit this project, you need to install the following,
 - Any code editor of your choice
 
 ### Usage
-- To clone the repository run this command `git clone git@github.com:tylher/First-capstone-project.git` in your command line
+- To clone the repository run this command `git clone git@github.com:tylher/first-capstone.git` in your command line
 
 ### Run tests
 For tracking linters errors locally you need to follow these steps:
