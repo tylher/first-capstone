@@ -538,3 +538,284 @@ footer {
   font-size: 15px;
   font-weight: 700;
 }
+
+@media screen and (min-width: 768px) {
+  header {
+    background-color: #fff;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .main-nav {
+    padding: 20px 11%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    position: static;
+    transform: translateX(0);
+    height: auto;
+  }
+
+  .main-nav > button {
+    display: inline;
+    color: #ec5242;
+    border: 3px #ec5242 solid;
+    background: none;
+    padding: 10px;
+    font-weight: 600;
+  }
+
+  .navigation {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navigation a {
+    color: #272a31d3;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .main-nav img {
+    display: block;
+    animation: logoRotate 2s ease;
+    position: relative;
+  }
+
+  @keyframes logoRotate {
+    0% {
+      transform: rotate(0deg);
+      left: -100px;
+    }
+
+    50% {
+      transform: scale(2) rotate(180deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+      left: 0;
+    }
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .user-nav {
+    background-color: #272a31f5;
+    padding: 20px 11%;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    position: relative;
+  }
+
+  .user-nav a {
+    color: #fff;
+  }
+
+  .main-background {
+    padding: 100px 11%;
+  }
+
+  .main-background > p {
+    width: 600px;
+  }
+
+  .main-background > h1 {
+    width: 600px;
+    animation: bounceIn 3s ease-in-out;
+    position: relative;
+  }
+
+  @keyframes bounceIn {
+    0% {
+      top: -300px;
+      z-index: -1;
+    }
+
+    50% {
+      top: 0;
+      z-index: 0;
+    }
+
+    70% {
+      transform: rotate(-10deg);
+    }
+
+    75% {
+      transform: rotate(8deg);
+    }
+
+    80% {
+      transform: rotate(-6deg);
+    }
+
+    85% {
+      transform: rotate(4deg);
+    }
+
+    90% {
+      transform: rotate(-2deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+      z-index: 0;
+    }
+  }
+
+  .main-program {
+    padding: 20px 11%;
+  }
+
+  .program-menu {
+    display: inline-flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .program-menu-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    padding: 10px;
+    gap: 10px;
+    visibility: hidden;
+    transition: all 0.2s;
+  }
+
+  .program-menu-item:hover {
+    border: #fff 2px solid;
+    transform: scale(1.06);
+  }
+
+  .program-menu-item p {
+    width: 100%;
+    height: 90px;
+  }
+
+  .program-menu-item h3 {
+    width: 100%;
+    font-size: 1.2em;
+    height: 40px;
+  }
+
+  .program-menu-item img {
+    padding: 0;
+  }
+
+  .main-program button {
+    margin: 70px;
+  }
+
+  .featured-speakers {
+    padding: 0 11% 50px;
+  }
+
+  .featured-speaker-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto !important;
+  }
+
+  .featured-speaker-item:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .featured-speakers button {
+    display: none;
+  }
+
+  .right {
+    display: flex;
+    gap: 10px;
+  }
+
+  .About-main-bg {
+    padding: 100px 17% 100px;
+  }
+
+  .About-main h1 {
+    width: 600px;
+  }
+
+  .About-main-bg > p {
+    width: 800px;
+    padding: 20px 100px;
+  }
+
+  .About-main-bg h2 {
+    display: none;
+  }
+
+  .about-logo {
+    padding: 40px 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-card {
+    width: 500px;
+  }
+
+  .previous-conf {
+    padding: 70px 17%;
+  }
+
+  .previous-conf-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+  }
+
+  .main-program-animation {
+    visibility: visible;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .m-t {
+    margin-top: 120px;
+  }
+
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 10px 10px rgba(211, 211, 211, 0.6);
+  }
+
+  .logo-description {
+    width: 600px;
+  }
+}
