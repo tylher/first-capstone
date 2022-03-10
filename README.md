@@ -23,6 +23,9 @@ The project is a website for a conference that brings together artists from diff
 
 [Live Demo Link](https://tylher.github.io/first-capstone/)
 
+## Video 
+[Loom video link](https://www.loom.com/share/52cb2e854b064203a749968bd49c3dc7)
+
 
 ## Getting Started
 
