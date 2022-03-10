@@ -117,4 +117,17 @@ featuredSpeakers.map((speaker) => featuredSpeakerList.innerHTML += `<div class="
             </p>
           </div>
         </div>`);
-        /* eslint-enable */
+/* eslint-enable */
+
+const secondSpeaker = document.querySelectorAll('.featured-speaker-item')[1];
+showToggle.addEventListener('click', () => {
+  if (showToggle.textContent === 'MORE') {
+    showToggle.innerHTML = 'LESS<i class="fa-solid fa-angle-up"></i>';
+    secondSpeaker.style.marginBottom = '0px';
+    featuredSpeakerList.style.height = 'auto';
+  } else if (showToggle.textContent === 'LESS') {
+    showToggle.innerHTML = 'MORE<i class="fa-solid fa-angle-down"></i>';
+    secondSpeaker.style.marginBottom = '100px';
+    featuredSpeakerList.style.height = '400px';
+  }
+});
