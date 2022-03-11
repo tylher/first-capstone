@@ -17,7 +17,6 @@ a {
 
 body {
   font-family: "Lato", sans-serif;
-  overflow-y: scroll;
 }
 
 .body-overflow {
@@ -55,7 +54,7 @@ footer img {
 
 .hamburger-close {
   position: relative;
-  right: -85%;
+  right: -75vw;
 }
 
 .hamburger:hover {
@@ -64,14 +63,14 @@ footer img {
 }
 
 .hamburger div {
-  width: 28px;
-  height: 5px;
-  transition: all 0.6s ease-in-out;
+  width: 25px;
+  height: 3px;
+  transition: all 0.4s ease-in-out;
   background-color: #272a31;
 }
 
 .one-active {
-  transform: rotate(-45deg) translateY(7px) translateX(-7px);
+  transform: rotate(-45deg) translateY(6px) translateX(-5px);
 }
 
 .two-active {
@@ -79,7 +78,7 @@ footer img {
 }
 
 .three-active {
-  transform: rotate(45deg) translateY(-7px) translateX(-7px);
+  transform: rotate(45deg) translateY(-6px) translateX(-5px);
 }
 
 .user-nav {
@@ -94,7 +93,7 @@ footer img {
   width: 100%;
   padding: 20px 100px;
   transform: translateX(-100%);
-  transition: all 2s;
+  transition: all 0.8s;
 }
 
 .main-nav > button {
@@ -229,24 +228,25 @@ main h1 {
   text-align: start;
   justify-content: space-between;
   background-color: rgba(114, 114, 114, 0.425);
-  padding-right: 10px;
+  padding: 5px 10px;
+  gap: 2%;
 }
 
 .program-menu-item > img {
-  /* width: 15%; */
-  padding: 20px;
+  width: 25%;
+  padding: 15px;
 }
 
 .program-menu-item > h3 {
-  width: 33%;
+  width: 35%;
   color: #ec5242;
-  font-size: 1.02em;
+  font-size: 1.1em;
 }
 
 .program-menu-item > p {
-  width: 55%;
+  width: 40%;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 0.8em;
+  font-size: 0.85em;
   line-height: 1.7em;
   font-weight: 600;
 }
